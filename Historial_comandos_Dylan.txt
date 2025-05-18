@@ -1,0 +1,36 @@
+pw
+pwd
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+cd
+mkdir VagrantFile
+cd VagrantFile/
+ls -l
+pwd
+git clone git@github.com:xPUPIx/TP1_AySO.git
+cd TP1_AySO/
+ls -l
+pwd
+cat /etc/os-release
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i home_url /etc/os-release
+echo “Usuario=$(whoami)” > datos_usuario.txt
+ls
+git add .
+git config --global user.email "gonzalezdyl22@gmail.com"
+git config --global user.name "xPUPIx"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >>
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+cat <<EOF>> README.md
+Alumno: Dylan Gonzalez
+División: 318 Turno: Noche
+EOF
+
+git add README.md datos_usuarios.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+history -a
